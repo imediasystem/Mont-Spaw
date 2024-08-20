@@ -1,0 +1,533 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain) */
+
+   html, body, div, span, applet, object, iframe,
+   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+   a, abbr, acronym, address, big, cite, code,
+   del, dfn, em, img, ins, kbd, q, s, samp,
+   small, strike, strong, sub, sup, tt, var,
+   b, u, i, center,
+   dl, dt, dd, ol, ul, li,
+   fieldset, form, label, legend,
+   table, caption, tbody, tfoot, thead, tr, th, td,
+   article, aside, canvas, details, embed, 
+   figure, figcaption, footer, header, hgroup, 
+   menu, nav, output, ruby, section, summary,
+   time, mark, audio, video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+   }
+   /* HTML5 display-role reset for older browsers */
+   article, aside, details, figcaption, figure, 
+   footer, header, hgroup, menu, nav, section {
+     display: block;
+   }
+   body {
+     line-height: 1;
+   }
+   ol, ul {
+     list-style: none;
+   }
+   blockquote, q {
+     quotes: none;
+   }
+   blockquote:before, blockquote:after,
+   q:before, q:after {
+     content: '';
+     content: none;
+   }
+   table {
+     border-collapse: collapse;
+     border-spacing: 0;
+   }
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  box-shadow: none;
+}
+
+/* Global Site Styles */
+
+body, html {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 48px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #0C1021;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: #5a58a0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 90px 0;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Global Text Styles */
+
+h1 {
+  font-size: clamp(1rem, 6vw, 4rem);
+  font-weight: bold;
+  text-shadow: 0.1em 0.1em 0.1em black;
+  letter-spacing: 4px;
+  padding: 20px 0;
+}
+
+h2 {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #7F90A4;
+  text-shadow: 0.1em 0.1em 0.1em black;
+  letter-spacing: 3px;
+}
+
+h3 {
+  color: #5a58a0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+p {
+  line-height: 1.4;
+  font-size: 1rem;
+}
+
+.menu {
+  background-color: #141337;
+  padding: 12px 0;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  z-index: 999;
+}
+
+.menu-items {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-link {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  text-shadow: 0.1em 0.1em 0.1em black;
+  transition: all 0.5s;
+}
+
+.menu-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  background-color: #5a58a0;
+  height: 0.15rem;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.menu-link:hover {
+  color: #5a58a0;
+  transition: 0.5s ease-in-out;
+}
+
+.menu-link:hover::after {
+  width: 100%;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.splash {
+  background-image: url("https://i.postimg.cc/QdcR2ZHv/weldingonpipeline-jpg.jpg");
+  background-position: center 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 24px 0;
+}
+
+.main-title {
+  margin: 2rem auto;
+  padding: 60px;
+  text-align: center;
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: bold;
+  max-width: 1040px;
+  height: auto;
+  text-shadow: 0.1em 0.1em 0.1em black;
+  letter-spacing: 4px;
+  background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+  border-radius: 10px 50%;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.main-subtitle {
+  margin: 2rem auto;
+  padding: 0 30px 20px 10px;
+  text-align: right;
+  font-size: clamp(1rem, 6vw, 2rem);
+  font-weight: bold;
+  color: #ffffff;
+  max-width: 1040px;
+  height: auto;
+  text-shadow: 0.1em 0.1em 0.1em black;
+  letter-spacing: 3px;
+}
+
+.btn {
+  padding: 15px 34px 15px 34px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #141337;
+  color: #ffffff;
+  border: 3px solid #5a58a0;
+  border-radius: 10px 50%;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-color: #060611;
+  color: #5a58a0;
+  transition: all 0.5s;
+}
+
+.section-title {
+  margin: 0 0 40px 0;
+  text-align: center;
+  font-size: 2.2em;
+  font-weight: bold;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  background: #141337;
+  border: 3px solid #5a58a0;
+  border-radius: 10px 50%;
+  text-shadow: 0.1em 0.1em 0.1em black;
+  letter-spacing: 4px;
+}
+
+.section-outtro {
+  margin: 30px 20px 0 20px;
+}
+
+.col-half {
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+  margin: 0 20px;
+}
+
+.col-half img {
+  margin-top: 20px;
+  border-radius: 10px;
+  outline: 1px solid black;
+  box-shadow: 10px 10px 8px black;
+}
+
+.features-wrapper {
+  display: flex;
+}
+
+.feature {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  text-align: center;
+  margin: 24px 0 0 0;
+}
+
+.feature i {
+  width: 120px;
+  height: 110px;
+  line-height: 100px;
+  color: #ffffff;
+  background-color: #141337;
+  border: 3px solid #5a58a0;
+  border-radius: 10px 50%;
+  text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+.feature i:hover {
+  background-color: #060611;
+  transition: all 0.5s;
+}
+
+.feature-title {
+  margin: 24px 0 0 0;
+}
+
+.feature-description {
+  margin: 24px 0 0 0;
+  padding: 0 24px;
+}
+
+.banner {
+  margin: 20px 0;
+}
+
+.banner img {
+  margin: 40px 0;
+  max-width: 100%;
+  height: auto;
+  border: 3px solid #5a58a0;
+  border-radius: 10px 50%;
+}
+
+.statement {
+  background-image: url("https://i.postimg.cc/Tw9KVcZC/rysunek-techniczny-blue.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 35vh;
+  text-align: center;
+}
+
+.statement p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: bold;
+  text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+.contacts {
+  text-align: center;
+}
+
+.social-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 40px 0;
+}
+
+.social-links li {
+  display: inline-block;
+  border: 1px solid #141337;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  background-color: #141337;
+  border: 3px solid #5a58a0;
+  border-radius: 10px 50%;
+  margin: 20px 50px;
+  padding: 10px;
+  text-shadow: 0.1em 0.1em 0.1em black;
+  transition: all 0.5s;
+}
+
+.social-links li:hover {
+  background-color: #060611;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+
+.social-links i {
+  color: #ffffff;
+  text-shadow: 0.1em 0.1em 0.1em black;
+  transition: all 0.5s;
+}
+
+.social-links i:hover {
+  animation: roll 2s infinite;
+  transform: rotate(30deg);
+  opacity: 0.7;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.contacts-wrapper {
+  display: flex;
+  max-width: 100%;
+}
+
+.contact {
+  flex: 0 0 27.333333%;
+  max-width: 33.333333%;
+  text-align: center;
+  border: 3px solid #5a58a0;
+  border-radius: 10px 50%;
+  background-color: #141337;
+  margin: 3%;
+  padding: 20px;
+}
+
+.contact:hover {
+  background-color: #060611;
+  transition: all 0.5s;
+}
+
+.contact i {
+  margin: 20px 0;
+  text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+.contact p {
+  line-height: 2;
+  padding: 5px 0;
+}
+
+.carousel {
+  margin: 40px 15px;
+}
+
+.carousel-cell {
+  margin: 40px 0;
+  overflow: hidden;
+}
+
+.carousel-cell img {
+  display: block;
+  height: 400px;
+}
+
+.page-footer {
+  background-color: #141337;
+  text-align: center;
+  text-shadow: 0.1em 0.1em 0.1em black;
+  font-weight: bold;
+  padding: 25px 0;
+}
+
+.page-footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer p {
+  margin: 0;
+}
+
+.page-footer a {
+  color: #5a58a0;
+}
+
+@media screen and (max-width: 768px) {
+  
+  section {
+    padding: 80px 0 0 0;
+  }
+  
+  .menu {
+    padding: 10px;
+  }
+  .menu-items {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 1.4rem;
+  }
+
+  .menu-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    width: min-content;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    transition: 0,5s ease-in-out;
+  }
+
+  .menu-icon:hover {
+    color: #FFFFFF;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .collapsible-content {
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: all 0,5s linear;
+  }
+
+  .collapsible--expanded .collapsible-content {
+      max-height: 100vh;
+  }
+  
+  .carousel-cell img {
+    height: 200px;
+  }
+
+  .features-wrapper {
+    display: block;
+  }
+
+  .feature {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .contacts-wrapper {
+    display: block;
+  }
+
+  .contact {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .col-half {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100%;
+    width: 90%;
+    height: auto;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+}
