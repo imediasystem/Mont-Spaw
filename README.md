@@ -1,9 +1,10 @@
-ROSSTAL - usługi monterskie i spawalnicze
-## 🔥 Project Name - TRANSPORT
+![www-4-org](https://github.com/user-attachments/assets/c8269855-3445-4a80-a6f6-84e461eda270)
 
-See the live version of [TRANSPORT](https://imediasystem.github.io/Transport/)
+## 🔥 Project Name - ROSSTAL
 
-Designing, developing and hosting a website for a logistics company using HTML, CSS, JavaScript and jQuery. This project involve creating a user-friendly interface and ensuring reliable hosting services, enhancing the company's online presence and client interactions.
+See the live version of [ROSSTAL](https://imediasystem.github.io/Rosstal/)
+
+Working on a website for a pipe-fitting company, aimed at improving client engagement through a streamlined digital platform using HTML, CSS, JavaScript, and Angular. This project underscores my commitment to delivering high-quality web solutions.
 
 &nbsp;
 
