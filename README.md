@@ -1,4 +1,4 @@
-![www-4-org](https://github.com/user-attachments/assets/c8269855-3445-4a80-a6f6-84e461eda270)
+![www-4](https://github.com/user-attachments/assets/256e709e-dca3-4d82-b769-c95f1a873a81)
 
 ## 🔥 Project Name - ROSSTAL
 
