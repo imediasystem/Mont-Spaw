@@ -4,7 +4,7 @@
 
 See the live version of [ROSSTAL](https://imediasystem.github.io/Rosstal/)
 
-Working on a website for a pipe-fitting company, aimed at improving client engagement through a streamlined digital platform using HTML, CSS, JavaScript and Angular. This project underscores my commitment to delivering high-quality web solutions.
+Working on a website for a pipe-fitting company, aimed at improving client engagement through a streamlined digital platform using HTML, CSS, JavaScript, jQuery and Angular. This project underscores my commitment to delivering high-quality web solutions.
 
 &nbsp;
 
